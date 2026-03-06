@@ -25,6 +25,8 @@ Omni.API/**/*.binlog
 # Visual Studio 14+ cache/options directory
 Omni.API/.vs/
 Omni.API/.vs/**
+Omni.API/obj/
+Omni.API/obj/**
 
 # Visual Studio 15+ auto generated files
 Omni.API/Generated\ Files/
