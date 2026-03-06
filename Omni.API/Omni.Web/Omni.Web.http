@@ -4,3 +4,71 @@ GET {{Omni.Web_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+### Flights - list all
+GET {{Omni.Web_HostAddress}}/flights
+Accept: application/json
+
+###
+
+### Flights - get by id
+GET {{Omni.Web_HostAddress}}/flights/1
+Accept: application/json
+
+###
+
+### Flights - create
+POST {{Omni.Web_HostAddress}}/flights
+Content-Type: application/json
+
+{
+  "flightNumber": "RO622",
+  "aircraft": "YR-BGA",
+  "origin": "OTP",
+  "destination": "OMR",
+  "scheduledDeparture": "2026-03-06T06:00:00Z",
+  "actualDeparture": "2026-03-06T06:00:00Z",
+  "scheduledArrival": "2026-03-06T07:00:00Z",
+  "actualArrival": "2026-03-06T07:00:00Z",
+  "gate": "Gate 1",
+  "runway": "19",
+  "passengerNumber": 68,
+  "delayMinutes": 0,
+  "crewPilots": 2,
+  "crewFlightAttendants": 3,
+  "baggageConveyorBelt": "Carousel 1",
+  "baggageTotalChecked": 45
+}
+
+###
+
+### Flights - update (replace)
+PUT {{Omni.Web_HostAddress}}/flights/1
+Content-Type: application/json
+
+{
+  "flightId": 1,
+  "flightNumber": "RO621",
+  "aircraft": "YR-BGA",
+  "origin": "OTP",
+  "destination": "OMR",
+  "scheduledDeparture": "2026-03-06T06:00:00Z",
+  "actualDeparture": "2026-03-06T06:05:00Z",
+  "scheduledArrival": "2026-03-06T07:00:00Z",
+  "actualArrival": "2026-03-06T07:05:00Z",
+  "gate": "Gate 1",
+  "runway": "19",
+  "passengerNumber": 68,
+  "delayMinutes": 5,
+  "crewPilots": 2,
+  "crewFlightAttendants": 3,
+  "baggageConveyorBelt": "Carousel 1",
+  "baggageTotalChecked": 45
+}
+
+###
+
+### Flights - delete
+DELETE {{Omni.Web_HostAddress}}/flights/1
+
+###

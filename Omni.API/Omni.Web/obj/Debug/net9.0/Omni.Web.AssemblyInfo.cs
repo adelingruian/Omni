@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Omni.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c67a60ba6c23b4d11f4774549707337f7f652efc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Omni.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Omni.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
